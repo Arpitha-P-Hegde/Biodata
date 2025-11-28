@@ -7,6 +7,7 @@
 }
 
 body {
+  margin-top: 80px; 
   background: #f3f6fa;
   color: #333;
 }
@@ -93,7 +94,12 @@ ul {
 p {
   margin: 10px 0;
 }
-
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 /* ---- Responsive Layout ---- */
 @media (max-width: 768px) {
   .resume-container {
@@ -189,4 +195,7 @@ p {
   font-style: italic;
   color: #555;
 }
+
+
+
 }
