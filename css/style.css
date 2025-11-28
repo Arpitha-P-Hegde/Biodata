@@ -1,0 +1,192 @@
+/* ---- Global Styles ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f3f6fa;
+  color: #333;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e3d58;
+  padding: 15px 40px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #dff6ff;
+}
+
+/* ---- Card Style ---- */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ---- Resume Layout ---- */
+.resume-container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+
+.left-card {
+  width: 30%;
+}
+
+.right-card {
+  width: 70%;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 20px;
+}
+
+/* ---- Headings ---- */
+h1, h2, h3 {
+  color: #1e3d58;
+  margin-bottom: 12px;
+}
+
+ul {
+  margin-left: 20px;
+  line-height: 1.7;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* ---- Responsive Layout ---- */
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+  }
+  
+  .left-card, .right-card {
+    width: 100%;
+  }
+
+  /* ---- Section Cards (Inside Right Card) ---- */
+.section-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    margin-top: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e6e6e6;
+}
+
+.section-card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e3d58;
+    border-bottom: 2px solid #d1d9e6;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+/* Education Card Special Styling */
+.education-card .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e3d58;
+    border-bottom: 2px solid #d1d9e6;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.edu-item:last-child {
+    border-bottom: none;
+}
+
+.edu-left h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.edu-right {
+    text-align: right;
+}
+
+.edu-right h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* If lists inside card need spacing */
+.section-card ul {
+    margin-left: 18px;
+    margin-top: 5px;
+    line-height: 1.6;
+}
+.education-card .edu-item {
+  margin-bottom: 15px; /* spacing between degrees */
+}
+
+.line-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line-split strong {
+  font-weight: 600;
+}
+
+.line-split .year {
+  font-weight: 500;
+}
+
+.institute {
+  margin-top: 3px;
+  font-style: italic;
+  color: #555;
+}
+}
