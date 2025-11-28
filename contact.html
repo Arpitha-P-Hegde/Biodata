@@ -55,15 +55,19 @@
 <section style="padding:40px;">
     <div class="card contact-card">
         <h1>Contact Me</h1>
-        <form action="https://formspree.io/f/mblvaapo" method="POST">
+        <form id="contactForm" action="https://formspree.io/f/mblvaapo" method="POST">
+
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Send Message</button>
+     <div id="formMessage" style="display:none; color:green; margin-top:10px;"></div>
 </form>
 
     </div>
 </section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
